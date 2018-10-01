@@ -12,8 +12,7 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-    self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
-    
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     [self initWKWebView];
     
 }
