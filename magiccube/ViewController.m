@@ -36,28 +36,39 @@
         self.webView.scrollView.scrollIndicatorInsets = self.webView.scrollView.contentInset;
     }
     
+  
+    
+    //获取bundlePath 路径
+    NSString *bundlePath = [[NSBundle mainBundle] bundlePath];
+    //获取本地html目录 basePath
+    NSString *basePath = [NSString stringWithFormat: @"%@/www", bundlePath];
+    //获取本地html目录 baseUrl
+    NSURL *baseUrl = [NSURL fileURLWithPath: basePath isDirectory: YES];
+    NSLog(@"%@", baseUrl);
+    //html 路径
+    NSString *indexPath = [NSString stringWithFormat: @"%@/index.html", basePath];
+    //html 文件中内容
+    NSString *indexContent = [NSString stringWithContentsOfFile:
+                              indexPath encoding: NSUTF8StringEncoding error:nil];
+    //显示内容
+    [self.webView loadHTMLString: indexContent baseURL: baseUrl];
+    
     // 获取默认User-Agent
     [self.webView evaluateJavaScript:@"navigator.userAgent" completionHandler:^(id result, NSError *error) {
         NSString *oldAgent = result;
         NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
-         NSString *appVersion = [infoDictionary objectForKey:@"CFBundleShortVersionString"];
+        NSString *appVersion = [infoDictionary objectForKey:@"CFBundleShortVersionString"];
         // 给User-Agent添加额外的信息
-        NSString *newAgent = [NSString stringWithFormat:@"%@;%@", oldAgent, [@"APP/JHLLO app_version:" stringByAppendingString:appVersion]];
+        NSString *newAgent = [NSString stringWithFormat:@"%@;%@", oldAgent, [@"APP/JHELLO app_version:" stringByAppendingString:appVersion]];
+        NSLog(newAgent);
         // 设置global User-Agent
         NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:newAgent, @"UserAgent", nil];
         [[NSUserDefaults standardUserDefaults] registerDefaults:dictionary];
         [self.webView setCustomUserAgent:newAgent];
     }];
     
-    NSString *urlStr = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
-    NSURL *_url = [NSURL fileURLWithPath:urlStr];
-    NSURL *fileURL = _url;
-    [self.webView loadFileURL:fileURL allowingReadAccessToURL:fileURL];
- 
-//    NSString *urlStr = @"http://exchange.mofangvr.com";
-//    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:urlStr]];
-//    [self.webView loadRequest:request];
     
+
     self.webView.UIDelegate = self;
     self.webView.navigationDelegate = self;
     [self.view addSubview:self.webView];
@@ -89,6 +100,9 @@
 }
 // 页面加载完毕时调用
 - (void)webView:(WKWebView *)webView didFinishNavigation:(null_unspecified WKNavigation *)navigation {
+    
+    NSLog(@"页面加载完毕");
+
 }
 
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message
