@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+-(void)onResult:(NSString*)action didReceiveScriptMessage:(NSString *)text;
 
 @end
 

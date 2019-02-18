@@ -1,0 +1,47 @@
+PODS:
+  - CYLTabBarController (1.17.22)
+  - JCore (1.2.5)
+  - JPush (3.1.1.1):
+    - JCore (~> 1.2.5)
+  - LBXScan/LBXNative (2.3):
+    - LBXScan/Types (~> 2.2)
+  - LBXScan/LBXZBar (2.3):
+    - LBXScan/Types (~> 2.2)
+    - ZBarSDK (~> 1.3.1)
+  - LBXScan/LBXZXing (2.3):
+    - LBXScan/Types (~> 2.2)
+  - LBXScan/Types (2.3)
+  - LBXScan/UI (2.3):
+    - LBXScan/Types (~> 2.2)
+  - WebViewJavascriptBridge (6.0.3)
+  - ZBarSDK (1.3.1)
+
+DEPENDENCIES:
+  - CYLTabBarController (~> 1.17.22)
+  - JPush
+  - LBXScan/LBXNative (~> 2.3)
+  - LBXScan/LBXZBar (~> 2.3)
+  - LBXScan/LBXZXing (~> 2.3)
+  - LBXScan/UI (~> 2.3)
+  - WebViewJavascriptBridge (~> 6.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CYLTabBarController
+    - JCore
+    - JPush
+    - LBXScan
+    - WebViewJavascriptBridge
+    - ZBarSDK
+
+SPEC CHECKSUMS:
+  CYLTabBarController: 35784c2969383583d11cc56ff5abce078f19d94a
+  JCore: 14706de2640b25fb77dbd02332696491407f37c9
+  JPush: 25dd9013fbe106082c14f9f30a82364ee98852fb
+  LBXScan: e51449f0832d1fe17da632af0d22adeb3cfa3543
+  WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
+  ZBarSDK: 4c1b5daeb7d6cc67dc9355e690af0230a661f6ec
+
+PODFILE CHECKSUM: 4f354cb9fe2254155248c4aac983c1d002c15c5a
+
+COCOAPODS: 1.6.0.beta.2
