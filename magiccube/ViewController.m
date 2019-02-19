@@ -36,7 +36,8 @@
     [self.view addSubview:_launchView];//添加子视图
     
     UIImage *image = [UIImage imageNamed:@"launch-icon.png"];
-    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(100, CGRectGetMaxY(self.view.frame)-120, image.size.width/3,image.size.height/3)];
+    
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width-image.size.width/3)/2, CGRectGetMaxY(self.view.frame)-120, image.size.width/3,image.size.height/3)];
     imageView.image = image;
     [_launchView addSubview:imageView];
     
