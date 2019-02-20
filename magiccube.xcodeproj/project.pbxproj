@@ -46,7 +46,7 @@
 		39C7F3302135230300D01F2D /* magiccubeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C7F32F2135230300D01F2D /* magiccubeTests.m */; };
 		39C7F33B2135230300D01F2D /* magiccubeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C7F33A2135230300D01F2D /* magiccubeUITests.m */; };
 		39D2B04721F31AB7000426A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D2B04621F31AB7000426A3 /* Main.storyboard */; };
-		3B490123221A7B990011B803 /* launch-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B490122221A7B990011B803 /* launch-icon.png */; };
+		3B490126221C06FD0011B803 /* launch-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B490125221C06FD0011B803 /* launch-icon.png */; };
 		4105244CB3C208625060A5BD /* libPods-magiccube.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7785C230FC6EDF71B52CE54A /* libPods-magiccube.a */; };
 /* End PBXBuildFile section */
 
@@ -144,8 +144,8 @@
 		39C7F33C2135230300D01F2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39D2B04621F31AB7000426A3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		39D2B04821F835BB000426A3 /* magiccube.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = magiccube.entitlements; sourceTree = "<group>"; };
-		3B490122221A7B990011B803 /* launch-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "launch-icon.png"; path = "../../Desktop/launch-icon.png"; sourceTree = "<group>"; };
 		3B490124221A7BC30011B803 /* launch-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-icon.png"; sourceTree = "<group>"; };
+		3B490125221C06FD0011B803 /* launch-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-icon.png"; sourceTree = "<group>"; };
 		7785C230FC6EDF71B52CE54A /* libPods-magiccube.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-magiccube.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F81784CAB241EFF750E4D4CF /* Pods-magiccube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magiccube.release.xcconfig"; path = "Target Support Files/Pods-magiccube/Pods-magiccube.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -313,7 +313,7 @@
 		39C7F3122135230100D01F2D /* magiccube */ = {
 			isa = PBXGroup;
 			children = (
-				3B490122221A7B990011B803 /* launch-icon.png */,
+				3B490125221C06FD0011B803 /* launch-icon.png */,
 				393B15612215633C00760767 /* Resources */,
 				3918F68C220EA43F008ED212 /* scancode */,
 				39D2B04821F835BB000426A3 /* magiccube.entitlements */,
@@ -475,7 +475,7 @@
 				393B15632215652D00760767 /* ScanCode.bundle in Resources */,
 				39407CE62165C55D00501D77 /* Images.xcassets in Resources */,
 				39407CD92165B96200501D77 /* www in Resources */,
-				3B490123221A7B990011B803 /* launch-icon.png in Resources */,
+				3B490126221C06FD0011B803 /* launch-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,7 +738,7 @@
 				CODE_SIGN_ENTITLEMENTS = magiccube/magiccube.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 433777GGBT;
+				DEVELOPMENT_TEAM = F335G6QABF;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = magiccube/Info.plist;
@@ -747,7 +747,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.magic.3e;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magiccube.mce;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -762,7 +762,7 @@
 				CODE_SIGN_ENTITLEMENTS = magiccube/magiccube.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 433777GGBT;
+				DEVELOPMENT_TEAM = F335G6QABF;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = magiccube/Info.plist;
@@ -771,7 +771,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.magic.3e;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magiccube.mce;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;

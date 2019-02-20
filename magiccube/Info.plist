@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>zh_CN</string>
 	<key>CFBundleDisplayName</key>
-	<string>币生咨询</string>
+	<string>币生优选</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIcons</key>
@@ -34,7 +34,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>alipay</string>
@@ -61,8 +61,16 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>NSCalendarsUsageDescription</key>
+	<string>需要访问你的日历</string>
 	<key>NSCameraUsageDescription</key>
 	<string>从摄像头拍照需要相机权限</string>
+	<key>NSContactsUsageDescription</key>
+	<string>需要访问你的通讯录</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>需要访问你的健康分享数据</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>需要访问你的更新数据分享数据</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>需要定位</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
